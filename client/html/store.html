@@ -1,1 +1,32 @@
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store Word and Definition</title>
+    <link rel="stylesheet" href="../style/styles.css" />
+
+  </head>
+  <body>
+    <h1>Word Hub</h1>
+    <form id="wordForm" class="area_container">
+      <input type="text" id="word" class="word_box" placeholder="Enter the word" name="word" />
+      <textarea
+        id="wordDefinition"
+        name="definition"
+        placeholder="Enter the definition"
+      ></textarea>
+      <br />
+      <input
+        type="submit"
+        value="Store"
+        onclick="validateWordAndDefinition(); return false;"
+      />
+    </form>
+    <p id="feedback"></p>
+    <p id="total_requests"></p>
+    <p id="dictionary_length"></p>
+  </body>
+  <script src="/script/storeScript.js"></script>
+</html>

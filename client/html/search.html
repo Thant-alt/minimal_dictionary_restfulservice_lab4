@@ -1,1 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Word</title>
+    <link rel="stylesheet" href="../style/styles.css" />
+</head>
+<body>
+    <h1>Search Definitions</h1>
 
+    <div id="search_container" class="area_container">
+        <input type="search" class="word_box" name="search" id="word_search" required placeholder="Search Word">
+        <br>
+        <input type="button" value="Search" id="search_button" onclick="searchDefinition()">
+        <br>
+        <label id="definition_label" for="word_definition">Definition:</label>
+        <textarea id="word_definition" name="definition" readonly="true"></textarea>
+    </div>
+    <br>
+
+    <p id="feedback"></p>
+    <p id="total_requests"></p>
+    <p id="dictionary_length"></p>
+</body>
+<script src="/script/searchScript.js"></script>
+</html>
